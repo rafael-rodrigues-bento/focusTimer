@@ -35,6 +35,12 @@ body {
   background-color: var(--bg-color);
 }
 
+header{
+  position: fixed;
+  top: -129px;
+  left: 15px;
+}
+
 
 main {
   display: flex;
@@ -97,11 +103,7 @@ button {
 }
 
 
-header{
-  position: fixed;
-  top: -129px;
-  left: 15px;
-}
+
   
  
 
