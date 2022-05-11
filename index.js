@@ -190,3 +190,23 @@ function rainAudioPlay() {
     pauseSounds()
   }
 }
+
+// Dark Mode
+
+const buttonSun = document.querySelector('.day')
+const buttonMoon = document.querySelector('.dark')
+const body = document.querySelector('body')
+
+buttonSun.addEventListener('click', function () {
+  buttonSun.classList.add('hide')
+  buttonMoon.classList.remove('hide')
+  body.classList.toggle('dark')
+  pressButton()
+})
+
+buttonMoon.addEventListener('click', function () {
+  buttonSun.classList.remove('hide')
+  buttonMoon.classList.add('hide')
+  body.classList.toggle('dark')
+  pressButton()
+})
