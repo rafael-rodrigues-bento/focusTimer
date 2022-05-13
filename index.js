@@ -10,6 +10,8 @@ const soundRain = document.querySelector('.rain')
 const soundCoffeShop = document.querySelector('.coffeShop')
 const soundFireplace = document.querySelector('.fireplace')
 
+soundRain.loop = true
+
 // Eventos background sons selecionados
 soundFlorest.addEventListener('click', function () {
   soundFlorest.classList.toggle('select')
@@ -155,6 +157,7 @@ function florestPlay() {
   if (soundOn == false) {
     soundOn = true
     florestAudio.play()
+    florestAudio.loop = true
   } else {
     soundOn = false
     pauseSounds()
@@ -165,6 +168,7 @@ function firePlacePlay() {
   if (soundOn == false) {
     soundOn = true
     firePlaceAudio.play()
+    firePlaceAudio.loop = true
   } else {
     soundOn = false
     pauseSounds()
@@ -175,6 +179,7 @@ function coffeShopPlay() {
   if (soundOn == false) {
     soundOn = true
     coffeShopAudio.play()
+    coffeShopAudio.loop = true
   } else {
     soundOn = false
     pauseSounds()
@@ -185,6 +190,7 @@ function rainAudioPlay() {
   if (soundOn == false) {
     soundOn = true
     rainAudio.play()
+    rainAudio.loop = true
   } else {
     soundOn = false
     pauseSounds()
