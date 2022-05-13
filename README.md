@@ -1,6 +1,6 @@
 # focusTimer
 
-#Desafio do Programa Explorer da Rocketseat
+## Desafio do Programa Explorer da Rocketseat
 
 Trata-se de um timer estilo pomodoro.
 Funcionalidades esperadas dos botões:
